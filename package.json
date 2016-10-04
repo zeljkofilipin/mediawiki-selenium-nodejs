@@ -2,7 +2,7 @@
   "name": "selenium-mediawiki-js",
   "version": "0.0.1",
   "description": "How to write Selenium tests for MediaWiki using JavaScript (Node.js)",
-  "main": "index.js",
+  "main": "selenium/main_page.js",
   "scripts": {
     "test": "grunt"
   },
@@ -20,6 +20,7 @@
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-mocha-test": "^0.13.2",
+    "grunt-run": "^0.6.0",
     "load-grunt-tasks": "^3.5.2",
     "mocha": "^3.1.0",
     "selenium-webdriver": "^2.53.3"

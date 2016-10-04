@@ -13,6 +13,13 @@ module.exports = function (grunt) {
       },
     },
 
+    // Configure a run task
+    run: {
+      index: {
+        args: ['selenium/main_page.js']
+      }
+    },
+
     // Configure a mochaTest task
     mochaTest: {
       test: {
@@ -27,6 +34,6 @@ module.exports = function (grunt) {
   });
 
   // Default task(s).
-  grunt.registerTask('default', ['jshint', 'mochaTest']);
+  grunt.registerTask('default', ['jshint', 'run', 'mochaTest']);
 
 };
