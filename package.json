@@ -4,7 +4,7 @@
   "description": "How to write Selenium tests for MediaWiki using JavaScript (Node.js)",
   "main": "index.js",
   "scripts": {
-    "test": "node selenium/main_page.js && ./node_modules/mocha/bin/mocha --timeout 10000"
+    "test": "grunt"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://www.mediawiki.org/wiki/Selenium/JavaScript",
   "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-mocha-test": "^0.13.2",
+    "load-grunt-tasks": "^3.5.2",
     "mocha": "^3.1.0",
     "selenium-webdriver": "^2.53.3"
   }
