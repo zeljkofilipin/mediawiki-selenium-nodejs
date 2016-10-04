@@ -4,7 +4,7 @@
   "description": "How to write Selenium tests for MediaWiki using JavaScript (Node.js)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node selenium/main_page.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zeljkofilipin/selenium-mediawiki-js/issues"
   },
-  "homepage": "https://www.mediawiki.org/wiki/Selenium/JavaScript"
+  "homepage": "https://www.mediawiki.org/wiki/Selenium/JavaScript",
+  "dependencies": {
+    "selenium-webdriver": "^2.53.3"
+  }
 }
