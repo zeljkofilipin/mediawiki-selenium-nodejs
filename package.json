@@ -1,0 +1,19 @@
+{
+  "name": "selenium-mediawiki-js",
+  "version": "0.0.1",
+  "description": "How to write Selenium tests for MediaWiki using JavaScript (Node.js)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeljkofilipin/selenium-mediawiki-js.git"
+  },
+  "author": "Željko Filipin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeljkofilipin/selenium-mediawiki-js/issues"
+  },
+  "homepage": "https://github.com/zeljkofilipin/selenium-mediawiki-js#readme"
+}
