@@ -4,7 +4,7 @@
   "description": "How to write Selenium tests for MediaWiki using JavaScript (Node.js)",
   "main": "index.js",
   "scripts": {
-    "test": "node selenium/main_page.js"
+    "test": "node selenium/main_page.js && ./node_modules/mocha/bin/mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
