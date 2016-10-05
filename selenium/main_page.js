@@ -1,5 +1,6 @@
 // setup
-var webdriver = require( 'selenium-webdriver' ),
+var assert = require( 'assert' ),
+	webdriver = require( 'selenium-webdriver' ),
 	By = webdriver.By,
 	until = webdriver.until,
 	driver = new webdriver.Builder()
@@ -9,7 +10,7 @@ var webdriver = require( 'selenium-webdriver' ),
 // test
 driver.get( 'https://en.wikipedia.beta.wmflabs.org/wiki/Main_Page' );
 driver.findElement( By.linkText( 'Log in' ) ).isDisplayed().then( displayed => {
-	console.log( displayed );
+	assert( displayed );
 } );
 
 // teardown
