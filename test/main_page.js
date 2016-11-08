@@ -1,13 +1,15 @@
 var assert = require( 'assert' ),
-By = require( 'selenium-webdriver' ).By,
-firefox = require( 'selenium-webdriver/firefox' ),
-test = require( 'selenium-webdriver/testing' );
+	webdriver = require( 'selenium-webdriver' ),
+	By = webdriver.By,
+	test = require( 'selenium-webdriver/testing' );
 
 test.describe( 'Main page', function () {
 	var driver;
 
 	test.before( function () {
-		driver = new firefox.Driver();
+		driver = new webdriver.Builder()
+		.forBrowser( 'firefox' )
+		.build();
 	} );
 
 	test.after( function () {
