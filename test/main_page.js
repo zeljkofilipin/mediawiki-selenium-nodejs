@@ -6,13 +6,13 @@ var assert = require( 'assert' ),
 test.describe( 'Main page', function () {
 	var driver;
 
-	test.before( function () {
+	test.beforeEach( function () {
 		driver = new webdriver.Builder()
 		.forBrowser( 'firefox' )
 		.build();
 	} );
 
-	test.after( function () {
+	test.afterEach( function () {
 		driver.quit();
 	} );
 
