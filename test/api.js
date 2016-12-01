@@ -1,5 +1,5 @@
 var assert = require( 'assert' ),
-Nodemw = require( 'nodemw' );
+	Nodemw = require( 'nodemw' );
 
 describe( 'API', function () {
 	var client;

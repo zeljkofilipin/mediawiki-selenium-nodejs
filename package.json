@@ -20,8 +20,10 @@
   },
   "homepage": "https://www.mediawiki.org/wiki/Selenium/JavaScript",
   "dependencies": {
+    "eslint-config-wikimedia": "^0.3.0",
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.1.0",
+    "grunt-eslint": "^19.0.0",
     "grunt-jscs": "^3.0.1",
     "grunt-jsonlint": "^1.1.0",
     "grunt-mocha-test": "^0.13.2",

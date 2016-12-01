@@ -5,6 +5,14 @@ module.exports = function ( grunt ) {
 	// Project configuration
 	grunt.initConfig( {
 
+		// Configure ESLint task
+		eslint: {
+			all: [
+				'**/*.js',
+				'!node_modules/**'
+			]
+		},
+
 		// Configure a JSCS task
 		jscs: {
 			src: [
@@ -56,6 +64,6 @@ module.exports = function ( grunt ) {
 	} );
 
 	// Default tasks
-	grunt.registerTask( 'default', [ 'jscs', 'jshint', 'jsonlint', 'run', 'mochaTest' ] );
+	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint', 'jsonlint', 'run', 'mochaTest' ] );
 
 };
