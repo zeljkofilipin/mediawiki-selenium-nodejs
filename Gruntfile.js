@@ -2,33 +2,47 @@ module.exports = function ( grunt ) {
 
 	require( 'load-grunt-tasks' )( grunt );
 
-	// Project configuration.
+	// Project configuration
 	grunt.initConfig( {
 
-		// Configure a jscs task
+		// Configure a JSCS task
 		jscs: {
-			src: [ 'Gruntfile.js', 'selenium/**/*.js', 'test/**/*.js' ],
+			src: [
+				'**/*.js',
+				'!node_modules/**'
+			],
 			options: {
 				config: '.jscsrc'
 			}
 		},
 
-		// Configure a jshint task
+		// Configure a JSHint task
 		jshint: {
-			all: [ 'Gruntfile.js', 'selenium/**/*.js', 'test/**/*.js' ],
+			all: [
+				'**/*.js',
+				'!node_modules/**'
+			],
 			options: {
 				jshintrc: '.jshintrc'
 			}
 		},
 
-		// Configure a run task
+		// Configure JSONLint task
+		jsonlint: {
+			all: [
+				'**/*.json',
+				'!node_modules/**'
+			]
+		},
+
+		// Configure run task
 		run: {
 			index: {
 				args: [ 'selenium/main_page.js' ]
 			}
 		},
 
-		// Configure a mochaTest task
+		// Configure Mocha task
 		mochaTest: {
 			test: {
 				options: {
@@ -41,7 +55,7 @@ module.exports = function ( grunt ) {
 
 	} );
 
-	// Default task(s).
-	grunt.registerTask( 'default', [ 'jscs', 'jshint', 'run', 'mochaTest' ] );
+	// Default tasks
+	grunt.registerTask( 'default', [ 'jscs', 'jshint', 'jsonlint', 'run', 'mochaTest' ] );
 
 };
