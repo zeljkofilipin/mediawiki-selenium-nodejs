@@ -1,5 +1,23 @@
-# How to write Selenium tests for MediaWiki using Node.js
+# MediaWiki + Selenium + Node.js
 
-This repository holds code used in [Selenium/Node.js](https://www.mediawiki.org/wiki/Selenium/Node.js) wiki page. The code is tested using Travis CI.
+An example repository on how to implement Selenium tests in Node.js.
 
-[![Build Status](https://travis-ci.org/zeljkofilipin/selenium-mediawiki-js.svg?branch=master)](https://travis-ci.org/zeljkofilipin/selenium-mediawiki-js)
+## Prerequisites
+
+- [Firefox 47.0.1](https://ftp.mozilla.org/pub/firefox/releases/47.0.1/)
+- [Node.js](https://nodejs.org/en/)
+- [MediaWiki-Vagrant](https://www.mediawiki.org/wiki/MediaWiki-Vagrant)
+
+## Installation
+
+    npm install
+
+## Usage
+
+    npm test
+
+## Links
+
+- [Selenium/Node.js](https://www.mediawiki.org/wiki/Selenium/Node.js)
+
+[![Build Status](https://travis-ci.org/zeljkofilipin/mediawiki-selenium-nodejs.svg?branch=master)](https://travis-ci.org/zeljkofilipin/mediawiki-selenium-nodejs)
