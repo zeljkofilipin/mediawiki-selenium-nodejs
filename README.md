@@ -12,9 +12,21 @@ An example repository on how to implement Selenium tests in Node.js.
 
     npm install
 
-## Usage
+## Usage (except WebdriverIO)
 
     npm test
+
+## Usage (WebdriverIO)
+
+Additional prerequisites:
+
+- [Chrome](https://www.google.com/chrome/)
+- [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+
+Run the commands in separate console tabs or windows:
+
+    chromedriver --url-base=/wd/hub --port=4444
+    npm run wdio
 
 ## Links
 

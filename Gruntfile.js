@@ -59,11 +59,19 @@ module.exports = function ( grunt ) {
 				},
 				src: [ 'test/**/*.js' ]
 			}
+		},
+
+		// Configure WebdriverIO task
+		webdriver: {
+			test: {
+				configFile: './wdio.conf.js'
+			}
 		}
 
 	} );
 
 	// Default tasks
 	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint', 'jsonlint', 'run', 'mochaTest' ] );
+	grunt.registerTask( 'wdio', 'webdriver' );
 
 };

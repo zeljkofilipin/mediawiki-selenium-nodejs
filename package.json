@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "wdio": "grunt wdio"
   },
   "repository": {
     "type": "git",
@@ -28,10 +29,14 @@
     "grunt-jsonlint": "^1.1.0",
     "grunt-mocha-test": "^0.13.2",
     "grunt-run": "^0.6.0",
+    "grunt-webdriver": "^2.0.2",
     "jscs": "^3.0.7",
     "load-grunt-tasks": "^3.5.2",
     "mocha": "^3.2.0",
     "nodemw": "^0.10.1",
-    "selenium-webdriver": "^2.53.3"
+    "selenium-webdriver": "^2.53.3",
+    "wdio-dot-reporter": "0.0.6",
+    "wdio-mocha-framework": "^0.5.4",
+    "webdriverio": "^4.4.0"
   }
 }
