@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/zeljkofilipin/mediawiki-selenium-nodejs/issues"
   },
-  "homepage": "https://www.mediawiki.org/wiki/Selenium/JavaScript",
+  "homepage": "https://www.mediawiki.org/wiki/Selenium/Node.js",
   "dependencies": {
     "eslint-config-wikimedia": "^0.3.0",
     "grunt": "^1.0.1",
