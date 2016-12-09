@@ -13,7 +13,7 @@ module.exports = function ( grunt ) {
 			]
 		},
 
-		// Configure a JSCS task
+		// Configure JSCS task
 		jscs: {
 			src: [
 				'**/*.js',
@@ -24,7 +24,7 @@ module.exports = function ( grunt ) {
 			}
 		},
 
-		// Configure a JSHint task
+		// Configure JSHint task
 		jshint: {
 			all: [
 				'**/*.js',
@@ -66,12 +66,23 @@ module.exports = function ( grunt ) {
 			test: {
 				configFile: './wdio.conf.js'
 			}
+		},
+
+		// Configure Nightwatch task
+		nightwatch: {
+			options: {
+				// nightwatch settings
+				// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
+				src_folders: [ 'nightwatch' ], // eslint-disable-line camelcase
+				output_folder: 'report' // eslint-disable-line camelcase
+				// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
+			}
 		}
 
 	} );
 
 	// Default tasks
-	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint', 'jsonlint', 'run', 'mochaTest' ] );
+	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint', 'jsonlint', 'run', 'mochaTest', 'nightwatch' ] );
 	grunt.registerTask( 'wdio', 'webdriver' );
 
 };
