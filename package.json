@@ -7,9 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "grunt",
-    "nightwatch": "grunt nightwatch",
-    "wdio": "grunt wdio"
+    "test": "chromedriver --url-base=/wd/hub --port=4444 & grunt; pkill chromedriver"
   },
   "repository": {
     "type": "git",

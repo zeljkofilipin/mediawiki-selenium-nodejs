@@ -82,7 +82,6 @@ module.exports = function ( grunt ) {
 	} );
 
 	// Default tasks
-	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint', 'jsonlint', 'run', 'mochaTest' ] );
-	grunt.registerTask( 'wdio', 'webdriver' );
+	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint', 'jsonlint', 'run', 'mochaTest', 'nightwatch', 'webdriver' ] );
 
 };
