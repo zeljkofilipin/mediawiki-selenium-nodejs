@@ -8,7 +8,7 @@ test.describe( 'Main page', function () {
 
 	test.beforeEach( function () {
 		driver = new webdriver.Builder()
-		.forBrowser( 'firefox' )
+		.forBrowser( 'chrome' )
 		.build();
 	} );
 

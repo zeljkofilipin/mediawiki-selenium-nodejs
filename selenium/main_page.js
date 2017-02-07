@@ -3,7 +3,7 @@ var assert = require( 'assert' ),
 	webdriver = require( 'selenium-webdriver' ),
 	By = webdriver.By,
 	driver = new webdriver.Builder()
-	.forBrowser( 'firefox' )
+	.forBrowser( 'chrome' )
 	.build();
 
 // test
