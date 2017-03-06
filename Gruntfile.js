@@ -46,7 +46,7 @@ module.exports = function ( grunt ) {
 		// Configure run task
 		run: {
 			index: {
-				args: [ 'selenium/main_page.js' ]
+				args: [ 'webdriverjs/main_page.js' ]
 			}
 		},
 
