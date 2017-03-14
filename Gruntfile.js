@@ -46,7 +46,7 @@ module.exports = function ( grunt ) {
 		// Configure run task
 		run: {
 			index: {
-				args: [ 'webdriverjs/main_page.js' ]
+				args: [ 'test/main_page.js' ]
 			}
 		},
 
@@ -57,7 +57,7 @@ module.exports = function ( grunt ) {
 					reporter: 'spec',
 					timeout: 100000
 				},
-				src: [ 'test/**/*.js' ]
+				src: [ 'webdriverjs/**/*.js' ]
 			}
 		},
 
