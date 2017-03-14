@@ -1,13 +1,12 @@
-var assert = require( 'assert' ),
-	webdriver = require( 'selenium-webdriver' ),
-	By = webdriver.By,
+const assert = require( 'assert' ),
+	{ Builder, By } = require( 'selenium-webdriver' ),
 	test = require( 'selenium-webdriver/testing' );
 
 test.describe( 'Main page', function () {
-	var driver;
+	let driver;
 
 	test.beforeEach( function () {
-		driver = new webdriver.Builder()
+		driver = new Builder()
 		.forBrowser( 'chrome' )
 		.build();
 	} );
