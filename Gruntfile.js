@@ -26,6 +26,9 @@ module.exports = function ( grunt ) {
 		run: {
 			index: {
 				args: [ 'test/main_page.js' ]
+			},
+			webdriverio: {
+				args: [ 'webdriverio/stack/webdriverio.js' ]
 			}
 		},
 
