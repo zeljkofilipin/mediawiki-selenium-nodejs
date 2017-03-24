@@ -13,28 +13,6 @@ module.exports = function ( grunt ) {
 			]
 		},
 
-		// Configure JSCS task
-		jscs: {
-			src: [
-				'**/*.js',
-				'!node_modules/**'
-			],
-			options: {
-				config: '.jscsrc'
-			}
-		},
-
-		// Configure JSHint task
-		jshint: {
-			all: [
-				'**/*.js',
-				'!node_modules/**'
-			],
-			options: {
-				jshintrc: '.jshintrc'
-			}
-		},
-
 		// Configure JSONLint task
 		jsonlint: {
 			all: [
@@ -82,6 +60,6 @@ module.exports = function ( grunt ) {
 	} );
 
 	// Default tasks
-	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint', 'jsonlint', 'run', 'mochaTest', 'nightwatch', 'webdriver' ] );
+	grunt.registerTask( 'default', [ 'eslint', 'jsonlint', 'run', 'mochaTest', 'nightwatch', 'webdriver' ] );
 
 };
