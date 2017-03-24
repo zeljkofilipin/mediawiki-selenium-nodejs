@@ -1,3 +1,4 @@
+'use strict';
 const assert = require( 'assert' ),
 	{ Builder, By } = require( 'selenium-webdriver' ),
 	test = require( 'selenium-webdriver/testing' );
