@@ -29,6 +29,9 @@ module.exports = function ( grunt ) {
 			},
 			webdriverio: {
 				args: [ 'webdriverio/stack/webdriverio.js' ]
+			},
+			assert: {
+				args: [ 'webdriverio/stack/assert.js' ]
 			}
 		},
 
