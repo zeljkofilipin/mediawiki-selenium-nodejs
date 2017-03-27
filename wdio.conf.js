@@ -11,7 +11,8 @@ exports.config = {
 	// directory is where your package.json resides, so `wdio` will be called from there.
 	//
 	specs: [
-		'./webdriverio/specs/**/*.js'
+		'./webdriverio/specs/**/*.js',
+		'./webdriverio/stack/mocha.js'
 	],
 	// Patterns to exclude.
 	exclude: [
