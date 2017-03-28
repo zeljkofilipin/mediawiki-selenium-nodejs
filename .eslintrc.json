@@ -9,6 +9,7 @@
 		"qunit": true
 	},
 	"globals": {
+		"browser": false,
 		"require": false,
 		"module": false,
 		"mediaWiki": false,

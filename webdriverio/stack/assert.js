@@ -1,4 +1,3 @@
-/* global browser */
 'use strict';
 const assert = require( 'assert' );
 describe( 'Main page', function () {

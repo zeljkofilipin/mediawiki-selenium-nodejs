@@ -1,4 +1,3 @@
-/* global browser */
 'use strict';
 describe( 'Main page', function () {
 	it( 'should have "Log in" link', function () {

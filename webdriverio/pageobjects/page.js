@@ -1,5 +1,4 @@
 // From http://webdriver.io/guide/testrunner/pageobjects.html
-/* global browser */
 'use strict';
 class Page {
 	constructor() {
