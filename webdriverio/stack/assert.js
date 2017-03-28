@@ -1,13 +1,9 @@
+/* global browser */
 'use strict';
-const assert = require( 'assert' ),
-	webdriverio = require( 'webdriverio' ),
-	options = { desiredCapabilities: { browserName: 'chrome' } },
-	client = webdriverio.remote( options );
-
-client
-	.init()
-	.url( 'https://en.wikipedia.beta.wmflabs.org/wiki/Main_Page' )
-	.isVisible( 'li#pt-login a' ).then( function( visible ) {
-		assert( visible );
-	} )
-	.end();
+const assert = require( 'assert' );
+describe( 'Main page', function () {
+	it( 'should have "Log in" link', function () {
+		browser.url( '/Main_Page' );
+		assert( browser.isVisible( 'li#pt-login a' ) );
+	} );
+} );

@@ -12,6 +12,7 @@ exports.config = {
 	//
 	specs: [
 		'./webdriverio/specs/**/*.js',
+		'./webdriverio/stack/assert.js',
 		'./webdriverio/stack/mocha.js'
 	],
 	// Patterns to exclude.
