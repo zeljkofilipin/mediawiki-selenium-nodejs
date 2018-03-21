@@ -71,7 +71,7 @@ exports.config = {
 	//
 	// Set a base URL in order to shorten url command calls. If your url parameter starts
 	// with "/", then the base url gets prepended.
-	baseUrl: 'https://en.wikipedia.beta.wmflabs.org/wiki',
+	baseUrl: 'https://en.wikipedia.beta.wmflabs.org/wiki/',
 	//
 	// Default timeout for all waitFor* commands.
 	waitforTimeout: 10000,
