@@ -1,36 +1,42 @@
 'use strict';
-var assert = require( 'assert' ),
-	Nodemw = require( 'nodemw' );
+const assert = require( 'assert' ),
+	MWBot = require( 'mwbot' );
+let bot = new MWBot( {
+	apiUrl: 'https://en.wikipedia.beta.wmflabs.org/w/api.php'
+} );
 
 describe( 'API', function () {
-	var client;
 
-	before( function () {
-		client = new Nodemw( {
-			protocol: 'https',
-			server: 'en.wikipedia.beta.wmflabs.org',
-			path: '/w'
+	it( 'Main Page should exist', function() {
+
+		return bot.read( 'Main Page', { timeout: 8000 } ).then( ( response ) => {
+
+			// console.log(response);
+			// { batchcomplete: '', query: { pages: { '1': [Object] } } }
+
+			// console.log(response.query);
+			// { '1': { pageid: 1, ns: 0, title: 'Main Page', revisions: [Array] } } }
+
+			assert.equal( response.query.pages[ '1' ].pageid, 1 );
+
 		} );
+
 	} );
 
-	it( 'Main Page should exist', function ( done ) {
-		client.getArticle( 'Main Page', function ( err, data ) {
-			// console.log( data );
-			// <!--
-			// If you are reading the source wikitext of the main page:
-			// ...
-			assert( data );
-			assert.notEqual( data, undefined );
-			done();
+	it( 'Missing Page should not exist', function() {
+
+		return bot.read( 'Missing Page', { timeout: 8000 } ).then( ( response ) => {
+
+			// console.log(response);
+			// { batchcomplete: '', query: { pages: { '-1': [Object] } } }
+
+			// console.log(response.query);
+			// { pages: { '-1': { ns: 0, title: 'Missing Page', missing: '' } } }
+
+			assert.equal( response.query.pages[ '-1' ].missing, '' );
+
 		} );
+
 	} );
 
-	it( 'Missing Page should not exist', function ( done ) {
-		client.getArticle( 'Missing Page', function ( err, data ) {
-			// console.log( data );
-			// undefined
-			assert.equal( data, undefined );
-			done();
-		} );
-	} );
 } );
