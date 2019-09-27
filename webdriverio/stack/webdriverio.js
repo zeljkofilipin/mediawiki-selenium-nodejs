@@ -1,4 +1,3 @@
-'use strict';
 var webdriverio = require( 'webdriverio' ),
 	options = { desiredCapabilities: { browserName: 'chrome' } },
 	client = webdriverio.remote( options );

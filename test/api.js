@@ -1,4 +1,3 @@
-'use strict';
 const assert = require( 'assert' ),
 	MWBot = require( 'mwbot' );
 let bot = new MWBot( {

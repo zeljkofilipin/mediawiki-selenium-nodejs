@@ -1,4 +1,3 @@
-'use strict';
 const Page = require( './page' );
 
 class MainPage extends Page {

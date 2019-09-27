@@ -1,4 +1,3 @@
-'use strict';
 describe( 'Main page', function () {
 	it( 'should have "Log in" link', function () {
 		browser.url( 'Main_Page' );

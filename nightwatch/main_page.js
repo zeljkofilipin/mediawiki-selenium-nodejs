@@ -1,4 +1,3 @@
-'use strict';
 module.exports = {
 	'Main page': function ( client ) {
 		client

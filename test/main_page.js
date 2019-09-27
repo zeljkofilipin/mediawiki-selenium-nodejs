@@ -1,4 +1,3 @@
-'use strict';
 // setup
 var assert = require( 'assert' ),
 	webdriver = require( 'selenium-webdriver' ),

@@ -1,4 +1,3 @@
-'use strict';
 const assert = require( 'assert' ),
 	MainPage = require( '../pageobjects/main.page' );
 

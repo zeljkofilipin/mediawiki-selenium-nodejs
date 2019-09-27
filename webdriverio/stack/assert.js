@@ -1,4 +1,3 @@
-'use strict';
 const assert = require( 'assert' );
 describe( 'Main page', function () {
 	it( 'should have "Log in" link', function () {
