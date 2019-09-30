@@ -6,7 +6,7 @@ let bot = new MWBot( {
 
 describe( 'API', function () {
 
-	it( 'Main Page should exist', function() {
+	it( 'Main Page should exist', function () {
 
 		return bot.read( 'Main Page', { timeout: 8000 } ).then( ( response ) => {
 
@@ -22,7 +22,7 @@ describe( 'API', function () {
 
 	} );
 
-	it( 'Missing Page should not exist', function() {
+	it( 'Missing Page should not exist', function () {
 
 		return bot.read( 'Missing Page', { timeout: 8000 } ).then( ( response ) => {
 

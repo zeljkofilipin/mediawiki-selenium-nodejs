@@ -7,8 +7,8 @@ test.describe( 'Main page', function () {
 
 	test.beforeEach( function () {
 		driver = new Builder()
-		.forBrowser( 'chrome' )
-		.build();
+			.forBrowser( 'chrome' )
+			.build();
 	} );
 
 	test.afterEach( function () {
