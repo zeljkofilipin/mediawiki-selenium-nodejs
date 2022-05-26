@@ -22,7 +22,7 @@
   "dependencies": {
     "chromedriver": "^2.38.2",
     "eslint-config-wikimedia": "^0.3.0",
-    "grunt": "^1.5.2",
+    "grunt": "^1.5.3",
     "grunt-eslint": "^19.0.0",
     "grunt-jsonlint": "^1.1.0",
     "grunt-mocha-test": "^0.13.2",
