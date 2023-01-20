@@ -30,7 +30,7 @@
     "grunt-run": "^0.8.1",
     "grunt-webdriver": "^2.0.2",
     "load-grunt-tasks": "^3.5.2",
-    "mocha": "^3.2.0",
+    "mocha": "^10.2.0",
     "mwbot": "^1.0.10",
     "nightwatch": "^2.6.9",
     "selenium-webdriver": "^3.0.1",
