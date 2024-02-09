@@ -20,7 +20,7 @@
   },
   "homepage": "https://www.mediawiki.org/wiki/Selenium/Node.js",
   "dependencies": {
-    "chromedriver": "^2.38.2",
+    "chromedriver": "^119.0.1",
     "eslint-config-wikimedia": "^0.3.0",
     "grunt": "^1.5.3",
     "grunt-eslint": "^19.0.0",
